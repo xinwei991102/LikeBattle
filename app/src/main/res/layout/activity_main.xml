@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewThumbsUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_thumb_up_green_100dp" />
+
+    <ImageView
+        android:id="@+id/imageViewThumbsDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_thumb_down_red_100dp" />
+
+    <TextView
+        android:id="@+id/textViewThumbsUpCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="0"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewThumbsUp"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewThumbsUp"
+        app:layout_constraintStart_toStartOf="@+id/imageViewThumbsUp" />
+
+    <TextView
+        android:id="@+id/textViewThumbsDownCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="0"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewThumbsDown"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewThumbsDown"
+        app:layout_constraintStart_toStartOf="@+id/imageViewThumbsDown" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LikeBattle</string>
+    <string name="up">up</string>
+    <string name="down">down</string>
+</resources>
